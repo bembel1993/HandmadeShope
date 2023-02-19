@@ -13,9 +13,9 @@ ____
 ____
 #### Cart of a registered user
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4_1.png)
+![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4_2.png)
 ____
 #### All products
-![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4_2.png)
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4_3.png)
 ____
 #### Authorization
