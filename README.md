@@ -9,9 +9,9 @@ ____
 #### Three last added products
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p2.png)
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p3.png)
+![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4.png)
 ____
 #### Cart of a registered user
-![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4.png)
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/p4_1.png)
 ____
 #### All products
