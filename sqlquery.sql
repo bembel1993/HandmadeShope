@@ -1,0 +1,41 @@
+CREATE TABLE `products` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	`price` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	`descrip` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	`photo` LONGTEXT NOT NULL COLLATE 'cp1250_general_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='cp1250_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
+
+
+CREATE TABLE `user` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`namesurname` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	`password` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	`email` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	`number` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'cp1250_general_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='cp1250_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
+
+CREATE TABLE `cart` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`productId` INT(10) NULL DEFAULT '0',
+	`userId` INT(10) NULL DEFAULT '0',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `productId` (`productId`) USING BTREE,
+	INDEX `userId` (`userId`) USING BTREE,
+	CONSTRAINT `FK_cart_user` FOREIGN KEY (`userId`) REFERENCES `handmade`.`user` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK__products` FOREIGN KEY (`productId`) REFERENCES `handmade`.`products` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+COLLATE='cp1250_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
